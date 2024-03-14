@@ -5,6 +5,14 @@ import "fmt"
 func main() {
 	k := 2
 	nums := []int{1, 1, 1, 1}
+	//键盘输入数组（未完成 ）
+	//var nums []int
+	//var number int8
+	//fmt.Println("请输入一个数组")
+	//for i := 0; i < 3; i++ {
+	//	fmt.Printf("nums[%v]=", i)
+	//	fmt.Scanln(&number)
+	//}
 	ret := subarraySum(nums, k)
 	fmt.Println(ret)
 }
