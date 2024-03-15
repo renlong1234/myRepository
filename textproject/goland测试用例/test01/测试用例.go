@@ -9,4 +9,9 @@ func sum(num1 int, num2 int) int {
 func main() {
 	s := sum(10, 20)
 	fmt.Printf("sum=%v\n", s)
+	num1, _ := strconv.Atoi("765")
+	fmt.Println(num1)
+	str1 := strconv.Itoa(89)
+	fmt.Println(str1)
+	fmt.Printf("num1的数据类型是：%T,str1的数据类型是：%T", num1, str1)
 }
