@@ -14,4 +14,13 @@ func main() {
 	str1 := strconv.Itoa(89)
 	fmt.Println(str1)
 	fmt.Printf("num1的数据类型是：%T,str1的数据类型是：%T", num1, str1)
+
+	flag := strings.Contains("sadasjgojkgokj", "go")
+	count := strings.Count("sadasjgojkgokj", "go")
+	fmt.Println()
+	fmt.Println(count)
+	fmt.Printf("%v", flag)
+
+	fmt.Println()
+	fmt.Println(strings.Index("lagond", "go"))
 }
