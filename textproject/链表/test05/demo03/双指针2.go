@@ -11,27 +11,27 @@ type ListNode struct {
 
 func detectCycle(head *ListNode) *ListNode {
 	slow, fast := head, head
-	hasCycle := false
+	flag := false
 	for fast != nil && fast.Next != nil {
 		slow = slow.Next
 		fast = fast.Next.Next
 		if slow == fast {
-			hasCycle = true
+			flag = true
 			break
 		}
 	}
 
-	if !hasCycle {
+	if !flag {
 		return nil
 	}
 
-	ptr1 := head
-	for ptr1 != slow {
-		ptr1 = ptr1.Next
+	p := head
+	for p != slow {
+		p = p.Next
 		slow = slow.Next
 	}
 
-	return ptr1
+	return p
 }
 
 func main() {
