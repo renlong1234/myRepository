@@ -7,21 +7,6 @@ type ListNode struct {
 	Next *ListNode
 }
 
-//	func detectCycle(head *ListNode) *ListNode {
-//		low := head
-//		fast := head.Next
-//		for low < fast {
-//			if head == nil || head.Next == nil {
-//				return nil
-//			}
-//			if fast == nil || fast.Next == nil {
-//				return nil
-//			}
-//			fast = fast.Next
-//			low = low.Next
-//		}
-//		return n
-//	}
 func detectCycle(head *ListNode) *ListNode {
 	slow, fast := head, head
 	for fast != nil {
